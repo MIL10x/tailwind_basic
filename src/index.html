@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white dark:bg-black">
+    <!-- defind font check in config -->
+    <h1 class="font-bas">Hello world!</h1>
+
+    <!-- font size predeifind upto 9xl -->
+    <!-- <p class="text-xs">hey</p>
+    <p class="text-sm">hey</p>
+    <p class="text-base">hey</p>
+    <p class="text-lg">hey</p>
+    <p class="text-xl">hey</p>
+    <p class="text-2xl">hey</p>
+    <p class="text-3xl">hey</p>
+    <p class="text-4xl">hey</p>
+    <p class="text-5xl">hey</p>
+    <p class="text-6xl">hey</p>
+    <p class="text-7xl">hey</p>
+    <p class="text-8xl">hey</p> 
+    <p class="text-9xl">hey</p> -->
+
+    <!-- defined font size -->
+    <p class="text-10xl">hey</p>
+
+    <!-- font responsive -->
+    <p class="text-3xl md:text-3xl lg:text-6xl">hey</p>
+    <p><span class="font-bold">Lorem ipsum </span>dolor sit, amet consectetur adipisicing elit.<span class="font-extrabold">Doloremque neque minima sunt ad recusandae impedit ipsum ullam. </span> 
+        Nam deserunt accusamus sapiente aperiam explicabo eum illum iure in corrupti eveniet quam perferendis est nihil cupiditate
+         officia laudantium, fugit dolore iste tempore sint similique accusantium ad officiis? Quod, minima! Hic beatae obcaecati 
+         <span class="font-thin">excepturi nostrum ipsam deserunt, sint ratione dolorum </span>asperiores sapiente nulla exercitationem expedita maiores, 
+         <span class="leading-10 bg-white">harum eius tempora eaque error natus, distinctio inventore. Incidunt repudiandae voluptate laudantium, assumenda
+          eos aliquam unde expedita vitae neque omnis quisquam, deleniti, error pariatur.  In amet blanditiis ex ducimus
+           dignissimos expedita dolore, accusantium inventore neque doloremque incidunt.</span></p>
+    <div class="h-8 bg-sky-50"></div>
+    <div class="h-8 bg-sky-100"></div>
+    <div class="h-8 bg-sky-200"></div>
+    <div class="h-8 bg-sky-300"></div>
+    <div class="h-8 bg-sky-400"></div>
+    <div class="h-8 bg-red"></div>
+
+    <!-- text colour -->
+    <p class="text-sky-300">all is well</p>
+
+    <!-- padding and margin is as same as boostrap pl-padding left,pr - padding right -->
+    <button class="bg-sky-100 pl-2 pr-5 mt-3 ml-4">click me</button>
+    <button class="bg-sky-100 pe-2 ps-5">click me</button>
+    <!-- boder as same css with p and m function,size of 2,4,8, rounded -->
+    <button class="bg-sky-100 p-3 hover:border-y-8 hover:bg-sky-400 border-sky-700">border</button>
+    <button class="bg-sky-100 p-3 border-x-4 border-sky-700">border</button>
+    <button class="bg-sky-100 p-3 border-e-2 border-sky-700">border</button>
+    <button class="bg-sky-100 p-3 border-2 border-sky-700 rounded-3xl">border</button>
+    
+    <!-- layout -->
+    <div class="container h-40  border-2 border-sky-300 mt-5 rounded-2xl mx-auto hover:border-sky-500 relative">
+        <p class="text-sky-300 text-xl font-bold pl-4 pt-4 underline decoration-slate-500">Hello,I'm MILTON</p>
+        <p class="text-orange-300 text-base pl-4 pt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate in 
+            nisi voluptas fugit, inventore fugiat voluptatem, quas molestias ullam veniam
+             maxime! Modi alias optio itaque?</p>
+        <button class="absolute transform translate-y-4 translate-x-10 border-2 border-sky-300 bg-sky-100 hover:bg-sky-300 rounded-3xl p-3 mt-3">
+            more
+        </button> 
+    </div>
+
+    <!-- responsive -->
+    <div class=" mt-10 h-6 md:bg-sky-100 lg:bg-sky-500 text-base ps-2 text-black "> change color by layout size</div>
+
+    <!-- flex -->
+    <div class=" container mx-auto mt-10 text-base text-black flex justify-around"> 
+        <div class="bg-orange-100">hello</div>
+        <div class="bg-orange-100">hii</div>
+        <div class="bg-orange-100">bye</div>
+    </div> 
+    <div class=" container mx-auto mt-10 flex-col flex items-start"> 
+        <div class="bg-orange-100">hello</div>
+        <div class="bg-orange-100">hii</div>
+        <div class="bg-orange-100">bye</div>
+    </div>
+    <div class=" container mx-auto mt-10  flex"> 
+        <div class="bg-orange-100 flex-grow text-3xl pl-4">hello</div>
+        <div class="bg-orange-100 px-2 py-2">hii</div>
+        <div class="bg-orange-100 pr-4 py-2">bye</div>
+    </div>
+    <div class=" container mx-auto mt-10 mb-20 grid grid-cols-2"> 
+        <div class="bg-orange-100 ">hello</div>
+        <div class="bg-orange-100 ">hii</div>
+        <div class="bg-orange-100 ">bye</div>
+        <div class="bg-orange-100 ">bye</div>
+    </div>
+    <!-- dark mode add class="dark" to <html>-->
+    <div class=" mt-10 h-7 text-base ps-2 text-black bg-sky-200 dark:bg-orange-100 mb-20"> change color by layout size</div>
+
+    <!-- extra component look at input.css -->
+    <button class="btn">click it</button>
+    <button class="btn">click it</button>
+    <button class="btn">click it</button>
+    <hr>
+
+</body>
+</html>
